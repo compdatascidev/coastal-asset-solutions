@@ -75,12 +75,18 @@
       display:block;
     }
 
-    .service-card{
+    /* GRID SYSTEM (NEW) */
+    .grid{
+      display:grid;
+      grid-template-columns:1fr;
+      gap:18px;
+    }
+
+    .card{
       background:#fafafa;
       border:1px solid #e6e6e6;
       border-radius:10px;
       padding:20px;
-      margin-bottom:18px;
     }
 
     .cta-box{
@@ -101,15 +107,27 @@
       margin-top:10px;
     }
 
+    @media (min-width: 900px){
+      .logo{ max-width:720px; }
+
+      .grid{
+        grid-template-columns:1fr 1fr;
+      }
+
+      .grid.full{
+        grid-template-columns:1fr;
+      }
+    }
+
     @media (max-width: 640px){
       .container{
         margin:20px;
         padding:22px;
       }
-      .logo{
-        max-width:480px;
-      }
+
+      .logo{ max-width:480px; }
     }
+
   </style>
 </head>
 
@@ -128,26 +146,26 @@
 
   <hr>
 
-  <!-- HERO PITCH -->
+  <!-- HERO -->
   <h2>Independent Asset Control for Coastal Property Owners</h2>
 
   <p>
-    Coastal Asset Solutions exists to give property owners an independent technical layer between their asset and the contractor network.
-    We assess what is actually happening to your property — corrosion, exposure, degradation, and maintenance risk — without commercial bias.
+    Coastal Asset Solutions exists to provide an independent technical layer between property owners and contractor networks.
+    We assess what is actually happening to your asset — corrosion, exposure, degradation, and maintenance risk — without commercial bias.
   </p>
 
   <p>
-    Most property damage in coastal environments is driven by misdiagnosis, unclear scope, or contractor-led assumptions that are reactive rather than strategic.
-    Our role is to prevent those errors and bring clarity to decision-making.
+    A significant portion of coastal property damage is driven by **neglect, delayed maintenance, and under-estimation of early deterioration**.
+    This is exactly why independent assessment matters — to identify issues before they become costly failures or reactive contractor-driven repairs.
   </p>
 
   <p>We help owners understand:</p>
 
   <ul>
-    <li>What is genuinely deteriorating vs what is cosmetic or surface-level</li>
-    <li>Where coastal exposure is accelerating long-term asset loss</li>
-    <li>Whether contractor recommendations are complete, accurate, and necessary</li>
-    <li>How to prioritise maintenance spend to protect long-term asset value</li>
+    <li>What is genuinely deteriorating vs cosmetic wear</li>
+    <li>Where coastal exposure is accelerating asset decline</li>
+    <li>Whether contractor recommendations are complete and necessary</li>
+    <li>How to prioritise maintenance spend effectively</li>
   </ul>
 
   <!-- ABOUT -->
@@ -155,121 +173,121 @@
 
   <p>
     Coastal Asset Solutions provides independent assessment services for coastal property owners who need clarity on asset condition, corrosion risk, and maintenance priorities.
-    Our role is to act as a neutral technical advisor between property owners and contractors.
   </p>
 
   <p>
-    With hands-on exposure to coastal environments, structural wear patterns, and maintenance workflows, our focus is on identifying what is actually happening to your asset — not what is being sold to you.
+    With hands-on exposure to coastal environments, structural wear patterns, and maintenance systems, our focus is identifying real-world asset condition — not sales-driven interpretations.
   </p>
 
   <div class="image-wrap">
-    <img src="images/p1.png" alt="Coastal exposure example">
+    <img src="images/p1.png">
   </div>
 
   <!-- PROBLEM -->
   <h2>The Problem We Solve</h2>
 
   <p>
-    In coastal environments, deterioration often becomes visible only after meaningful damage has already occurred.
-    Contractors are typically engaged to repair, not independently assess — which leads to:
+    In coastal environments, deterioration often goes unnoticed until significant damage has already occurred.
+    Contractors are typically engaged to repair, not independently assess — leading to:
   </p>
 
   <ul>
     <li>Over-scoped or duplicated work</li>
     <li>Missed early-stage corrosion</li>
-    <li>Lack of prioritisation across multiple issues</li>
-    <li>Unclear or inconsistent quotes</li>
+    <li>Poor prioritisation of maintenance</li>
+    <li>Inconsistent quoting and scope gaps</li>
   </ul>
 
-  <!-- IMAGE -->
   <div class="image-wrap">
-    <img src="images/p2.png" alt="Independent review example">
+    <img src="images/p2.png">
   </div>
 
-  <!-- TOOLBOX -->
+  <!-- TOOLBOX (SIDE BY SIDE) -->
   <h2>The Toolbox Approach</h2>
 
-  <p>
-    We use structured assessment frameworks (“toolboxes”) depending on the situation:
-  </p>
+  <div class="grid">
 
-  <div class="service-card">
-    <strong>Exposure Mapping Toolbox</strong><br>
-    Identifies salt, wind, drainage, and environmental stress zones.
+    <div class="card">
+      <strong>Exposure Mapping Toolbox</strong><br>
+      Identifies salt, wind, drainage, and environmental stress zones.
+    </div>
+
+    <div class="card">
+      <strong>Corrosion Detection Toolbox</strong><br>
+      Detects early-stage degradation before visible failure.
+    </div>
+
+    <div class="card">
+      <strong>Scope Validation Toolbox</strong><br>
+      Ensures contractor work is correctly defined and complete.
+    </div>
+
+    <div class="card">
+      <strong>Quote Integrity Toolbox</strong><br>
+      Identifies missing scope, duplication, or inflated pricing.
+    </div>
+
+    <div class="card" style="grid-column:1/-1;">
+      <strong>Lifecycle Planning Toolbox</strong><br>
+      Structures long-term maintenance planning and prioritisation.
+    </div>
+
   </div>
 
-  <div class="service-card">
-    <strong>Corrosion Detection Toolbox</strong><br>
-    Detects early-stage degradation before visible failure.
-  </div>
-
-  <div class="service-card">
-    <strong>Scope Validation Toolbox</strong><br>
-    Ensures contractor work is correctly defined and complete.
-  </div>
-
-  <div class="service-card">
-    <strong>Quote Integrity Toolbox</strong><br>
-    Identifies missing scope, duplication, or inflated pricing.
-  </div>
-
-  <div class="service-card">
-    <strong>Lifecycle Planning Toolbox</strong><br>
-    Structures long-term maintenance planning and prioritisation.
-  </div>
-
-  <!-- IMAGE -->
   <div class="image-wrap">
-    <img src="images/p3.png" alt="Corrosion example">
+    <img src="images/p3.png">
   </div>
 
-  <!-- CORE SERVICES (RESTORED FULL DETAIL VERSION) -->
+  <!-- SERVICES (SIDE BY SIDE) -->
   <h2>Core Services</h2>
 
-  <div class="service-card">
-    <strong>Coastal Property Snapshot™</strong><br>
-    A structured overview of visible condition, exposure risk zones, and early-stage deterioration indicators. Designed for owners who want an independent first look at the property before deciding on maintenance, remediation, or contractor engagement.
+  <div class="grid">
+
+    <div class="card">
+      <strong>Coastal Property Snapshot™</strong><br>
+      A structured overview of visible condition, exposure risk zones, and early-stage deterioration indicators.
+    </div>
+
+    <div class="card">
+      <strong>Coastal Asset Protection Review™</strong><br>
+      A deeper technical assessment of corrosion risk and environmental exposure pathways.
+    </div>
+
+    <div class="card">
+      <strong>Independent Scope Development™</strong><br>
+      Contractor-ready scope ensuring accurate and complete quoting.
+    </div>
+
+    <div class="card">
+      <strong>Independent Quote Review™</strong><br>
+      Technical review of contractor pricing and scope alignment.
+    </div>
+
+    <div class="card" style="grid-column:1/-1;">
+      <strong>Annual Coastal Asset Review™</strong><br>
+      Ongoing monitoring and prioritisation of maintenance over time.
+    </div>
+
   </div>
 
-  <div class="service-card">
-    <strong>Coastal Asset Protection Review™</strong><br>
-    A deeper technical assessment of corrosion risk, material vulnerability, and environmental exposure pathways. Suited to owners who need a clearer understanding of how the coastal environment is affecting long-term asset performance and what should be prioritised.
-  </div>
-
-  <div class="service-card">
-    <strong>Independent Scope Development™</strong><br>
-    A contractor-ready scope definition designed to make sure all parties are pricing the same clearly defined work. This helps reduce ambiguity, avoid under-scoped quotes, and keep repair recommendations tied to the actual asset condition.
-  </div>
-
-  <div class="service-card">
-    <strong>Independent Quote Review™</strong><br>
-    A technical review of contractor pricing and scope alignment to identify missing work, duplicated work, unnecessary inclusions, or scope mismatches. The goal is to keep contractors honest and help owners make better-informed decisions before committing to spend.
-  </div>
-
-  <div class="service-card">
-    <strong>Annual Coastal Asset Review™</strong><br>
-    A recurring assessment tracking asset condition over time and updating maintenance priorities as conditions change. This service is designed for owners who want to protect high-value coastal property through planned, staged maintenance rather than reactive repairs.
-  </div>
-
-  <!-- IMAGE -->
   <div class="image-wrap">
-    <img src="images/p4.png" alt="Asset condition example">
+    <img src="images/p4.png">
   </div>
 
   <!-- WHY -->
   <h2>Why Independence Matters</h2>
 
   <p>
-    Coastal assets degrade continuously due to environmental exposure. Without independent review, decisions are often shaped by contractor assumptions rather than full visibility of asset condition.
+    Coastal assets degrade continuously due to environmental exposure.
+    Without independent review, issues are often underestimated, delayed, or addressed reactively.
   </p>
 
   <p>
-    Our role is to keep focus on the asset itself — its condition, its risks, and its long-term performance.
+    Our role is to keep decisions anchored to the actual condition of the asset — not assumptions or reactive maintenance cycles.
   </p>
 
-  <!-- IMAGE -->
   <div class="image-wrap">
-    <img src="images/p5.png" alt="Maintenance planning example">
+    <img src="images/p5.png">
   </div>
 
   <!-- CTA -->
@@ -278,7 +296,7 @@
     <h2>Request an Assessment</h2>
 
     <p>
-      Send your basic details and we will contact you to discuss the most appropriate level of service for your property.
+      Send your basic details and we will contact you to discuss the most appropriate level of service.
     </p>
 
     <a class="cta-button"
