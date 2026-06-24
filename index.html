@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Coastal Asset Solutions Ltd</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
     body{
       font-family: Arial, sans-serif;
@@ -12,6 +13,7 @@
       color:#111;
       line-height:1.6;
     }
+
     .container{
       max-width: 980px;
       margin: 40px auto;
@@ -20,73 +22,75 @@
       border-radius:10px;
       box-sizing:border-box;
     }
+
     .logo-wrap{
       text-align:center;
-      margin-bottom:20px;
+      margin-bottom:15px;
     }
+
     .logo{
       width:100%;
-      max-width:560px;
+      max-width:600px;
       height:auto;
     }
+
     .tagline{
       font-size:18px;
       color:#444;
       text-align:center;
       margin-bottom:10px;
     }
+
     hr{
       margin:30px 0;
       border:none;
       border-top:1px solid #ddd;
     }
+
     h2{
       margin-top:30px;
       margin-bottom:12px;
     }
-    h3{
-      margin-top:0;
-      margin-bottom:10px;
-    }
+
     p{
       margin-top:0;
       margin-bottom:16px;
     }
+
     ul{
       margin-top:0;
       margin-bottom:16px;
       padding-left:22px;
     }
+
     .image-wrap{
       margin:24px auto 32px auto;
-      max-width:720px;
+      max-width:700px;
     }
+
     .image-wrap img{
       width:100%;
       height:auto;
       border-radius:8px;
       display:block;
     }
-    .service-grid{
-      display:grid;
-      grid-template-columns:1fr;
-      gap:18px;
-      margin-top:18px;
-      margin-bottom:24px;
-    }
+
     .service-card{
       background:#fafafa;
       border:1px solid #e6e6e6;
       border-radius:10px;
-      padding:22px;
+      padding:20px;
+      margin-bottom:18px;
     }
+
     .cta-box{
       background:#fafafa;
       border:1px solid #e6e6e6;
       border-radius:10px;
       padding:24px;
-      margin-top:24px;
+      margin-top:30px;
     }
+
     .cta-button{
       display:inline-block;
       padding:13px 20px;
@@ -94,38 +98,16 @@
       color:white;
       text-decoration:none;
       border-radius:6px;
-      margin-top:8px;
-    }
-    .contact-box{
-      margin-top:24px;
-      padding-top:10px;
-    }
-
-    @media (min-width: 900px){
-      .service-grid{
-        grid-template-columns:1fr 1fr;
-      }
-      .logo{
-        max-width:640px;
-      }
-      .image-wrap{
-        max-width:640px;
-      }
+      margin-top:10px;
     }
 
     @media (max-width: 640px){
       .container{
         margin:20px;
-        padding:24px;
+        padding:22px;
       }
       .logo{
         max-width:420px;
-      }
-      .tagline{
-        font-size:16px;
-      }
-      .image-wrap{
-        max-width:100%;
       }
     }
   </style>
@@ -135,20 +117,46 @@
 
 <div class="container">
 
+  <!-- LOGO -->
   <div class="logo-wrap">
-    <img src="images/logo.png" alt="Coastal Asset Solutions Ltd logo" class="logo">
+    <img src="images/logo.png" class="logo" alt="Coastal Asset Solutions Ltd">
   </div>
 
+  <!-- TAGLINE -->
   <p class="tagline">
     Independent Coastal Property Assessments for Asset Protection, Risk Clarity, and Maintenance Planning
   </p>
 
   <hr>
 
+  <!-- HERO PITCH -->
+  <h2>Independent Asset Control for Coastal Property Owners</h2>
+
+  <p>
+    Coastal Asset Solutions exists to give property owners an independent technical layer between their asset and the contractor network.
+    We assess what is actually happening to your property — corrosion, exposure, degradation, and maintenance risk — without commercial bias.
+  </p>
+
+  <p>
+    Most property damage in coastal environments is not caused by neglect, but by misdiagnosis, unclear scope, or contractor-driven work that is reactive rather than strategic.
+    Our role is to stop that cycle.
+  </p>
+
+  <p>We help owners understand:</p>
+
+  <ul>
+    <li>What is genuinely deteriorating vs what is cosmetic or surface-level</li>
+    <li>Where coastal exposure is accelerating long-term asset loss</li>
+    <li>Whether contractor recommendations are complete, accurate, and necessary</li>
+    <li>How to prioritise maintenance spend to protect long-term asset value</li>
+  </ul>
+
+  <!-- ABOUT -->
   <h2>About Us</h2>
 
   <p>
-    Coastal Asset Solutions provides independent assessment services for coastal property owners who need clarity on asset condition, corrosion risk, and maintenance priorities. Our role is to act as a neutral technical advisor between property owners and contractors.
+    Coastal Asset Solutions provides independent assessment services for coastal property owners who need clarity on asset condition, corrosion risk, and maintenance priorities.
+    Our role is to act as a neutral technical advisor between property owners and contractors.
   </p>
 
   <p>
@@ -156,13 +164,14 @@
   </p>
 
   <div class="image-wrap">
-    <img src="images/p1.png" alt="Coastal property exposure example">
+    <img src="images/p1.png" alt="Coastal exposure example">
   </div>
 
+  <!-- PROBLEM -->
   <h2>The Problem We Solve</h2>
 
   <p>
-    In coastal environments, deterioration is often hidden until damage becomes expensive. Contractors are typically engaged to repair, not to independently assess — which can lead to:
+    In coastal environments, deterioration is often hidden until damage becomes expensive. Contractors are typically engaged to repair, not independently assess — which leads to:
   </p>
 
   <ul>
@@ -172,109 +181,110 @@
     <li>Unclear or inconsistent quotes</li>
   </ul>
 
-  <h2>Our Role — The Independent Layer</h2>
-
-  <p>
-    We sit between the asset owner and contractors as an independent review layer. Our objective is to ensure decisions are based on asset condition, not commercial bias.
-  </p>
-
+  <!-- IMAGE -->
   <div class="image-wrap">
-    <img src="images/p2.png" alt="Independent coastal asset review example">
+    <img src="images/p2.png" alt="Independent review example">
   </div>
 
+  <!-- TOOLBOX -->
   <h2>The Toolbox Approach</h2>
 
-  <p>
-    We use structured assessment frameworks (“toolboxes”) depending on the situation:
-  </p>
+  <p>We use structured assessment systems depending on the situation:</p>
 
-  <ul>
-    <li><strong>Exposure Mapping Toolbox</strong> — identifies environmental stress zones such as salt exposure, prevailing weather, drainage issues, and water ingress pathways</li>
-    <li><strong>Corrosion Detection Toolbox</strong> — identifies early-stage degradation before visible failure becomes expensive</li>
-    <li><strong>Scope Validation Toolbox</strong> — ensures contractor work is correctly defined, complete, and aligned to the actual problem</li>
-    <li><strong>Quote Integrity Toolbox</strong> — identifies inconsistencies, missing items, duplicated scope, or inflated work</li>
-    <li><strong>Lifecycle Planning Toolbox</strong> — helps owners prioritise long-term maintenance spending across coastal assets</li>
-  </ul>
-
-  <div class="image-wrap">
-    <img src="images/p3.png" alt="Coastal corrosion and maintenance example">
+  <div class="service-card">
+    <strong>Exposure Mapping Toolbox</strong><br>
+    Identifies salt, wind, drainage, and environmental stress zones.
   </div>
 
+  <div class="service-card">
+    <strong>Corrosion Detection Toolbox</strong><br>
+    Detects early-stage degradation before visible failure.
+  </div>
+
+  <div class="service-card">
+    <strong>Scope Validation Toolbox</strong><br>
+    Ensures contractor work is correctly defined and complete.
+  </div>
+
+  <div class="service-card">
+    <strong>Quote Integrity Toolbox</strong><br>
+    Identifies missing scope, duplication, or inflated pricing.
+  </div>
+
+  <div class="service-card">
+    <strong>Lifecycle Planning Toolbox</strong><br>
+    Structures long-term maintenance planning and prioritisation.
+  </div>
+
+  <!-- IMAGE -->
+  <div class="image-wrap">
+    <img src="images/p3.png" alt="Corrosion example">
+  </div>
+
+  <!-- SERVICES -->
   <h2>Core Services</h2>
 
-  <div class="service-grid">
-
-    <div class="service-card">
-      <h3>Coastal Property Snapshot™</h3>
-      <p>
-        A structured overview of visible condition, exposure risk zones, and early-stage deterioration indicators. Designed for owners who want an independent first look at the property before deciding on maintenance, remediation, or contractor engagement.
-      </p>
-    </div>
-
-    <div class="service-card">
-      <h3>Coastal Asset Protection Review™</h3>
-      <p>
-        A deeper technical assessment of corrosion risk, material vulnerability, and environmental exposure pathways. Suited to owners who need a clearer understanding of how the coastal environment is affecting long-term asset performance and what should be prioritised.
-      </p>
-    </div>
-
-    <div class="service-card">
-      <h3>Independent Scope Development™</h3>
-      <p>
-        A contractor-ready scope definition designed to make sure all parties are pricing the same clearly defined work. This helps reduce ambiguity, avoid under-scoped quotes, and keep repair recommendations tied to the actual asset condition.
-      </p>
-    </div>
-
-    <div class="service-card">
-      <h3>Independent Quote Review™</h3>
-      <p>
-        A technical review of contractor pricing and scope alignment to identify missing work, duplicated work, unnecessary inclusions, or scope mismatches. The goal is to keep contractors honest and help owners make better-informed decisions before committing to spend.
-      </p>
-    </div>
-
-    <div class="service-card" style="grid-column:1 / -1;">
-      <h3>Annual Coastal Asset Review™</h3>
-      <p>
-        A recurring assessment tracking asset condition over time and updating maintenance priorities as conditions change. Designed for owners who want to protect high-value coastal property through planned, staged maintenance rather than reactive repairs.
-      </p>
-    </div>
-
+  <div class="service-card">
+    <strong>Coastal Property Snapshot™</strong><br>
+    High-level condition and exposure overview for early risk identification.
   </div>
 
+  <div class="service-card">
+    <strong>Coastal Asset Protection Review™</strong><br>
+    Deeper technical assessment of corrosion risk and environmental exposure.
+  </div>
+
+  <div class="service-card">
+    <strong>Independent Scope Development™</strong><br>
+    Contractor-ready scope ensuring accurate and complete quoting.
+  </div>
+
+  <div class="service-card">
+    <strong>Independent Quote Review™</strong><br>
+    Technical review of contractor pricing and scope alignment.
+  </div>
+
+  <div class="service-card">
+    <strong>Annual Coastal Asset Review™</strong><br>
+    Ongoing monitoring of asset condition over time.
+  </div>
+
+  <!-- IMAGE -->
   <div class="image-wrap">
-    <img src="images/p4.png" alt="Coastal asset condition assessment example">
+    <img src="images/p4.png" alt="Asset condition example">
   </div>
 
+  <!-- WHY -->
   <h2>Why Independence Matters</h2>
 
   <p>
-    Coastal assets degrade continuously due to environmental exposure. Without independent review, decisions are often influenced by contractors whose incentives are aligned with repair volume, not asset optimisation.
+    Coastal assets degrade continuously due to environmental exposure.
+    Without independent review, decisions are often influenced by contractor incentives rather than asset optimisation.
   </p>
 
   <p>
     Our role is to keep the focus on the asset itself — its condition, its risks, and its long-term performance.
   </p>
 
+  <!-- IMAGE -->
   <div class="image-wrap">
-    <img src="images/p5.png" alt="Long-term coastal asset maintenance example">
+    <img src="images/p5.png" alt="Maintenance planning example">
   </div>
 
+  <!-- CTA -->
   <div class="cta-box">
-    <h2 style="margin-top:0;">Request an Assessment</h2>
+
+    <h2>Request an Assessment</h2>
 
     <p>
-      Click below to open your email and send us the basic property details. We’ll review the information and contact you to discuss the most appropriate level of service.
+      Send your basic details and we will contact you to discuss the most appropriate level of service for your property.
     </p>
 
-    <a href="mailto:info@coastalassetsolutions.co.nz?subject=Coastal%20Asset%20Assessment%20Request&body=Name:%0D%0A%0D%0A%0D%0APhone:%0D%0A%0D%0A%0D%0AProperty%20address%20/%20location:%0D%0A%0D%0A%0D%0ABrief%20description%20/%20concerns:%0D%0A%0D%0A%0D%0ARequirements:%0D%0A%0D%0A%0D%0AThanks"
-       class="cta-button">
+    <a class="cta-button"
+       href="mailto:info@coastalassetsolutions.co.nz?subject=Coastal%20Asset%20Assessment%20Request&body=Name:%0D%0A%0D%0APhone:%0D%0A%0D%0AProperty%20address%20/%20location:%0D%0A%0D%0AConcerns:%0D%0A%0D%0ARequirements:%0D%0A%0D%0AThanks">
       Request Assessment
     </a>
-  </div>
 
-  <div class="contact-box">
-    <h2>Contact</h2>
-    <p>info@coastalassetsolutions.co.nz</p>
   </div>
 
 </div>
