@@ -20,7 +20,7 @@
 
   <h2>Purpose</h2>
   <p>
-    We provide independent coastal property assessments focused on identifying risk, clarifying asset condition, and prioritising maintenance decisions for long-term property protection.
+    We provide independent coastal property assessments focused on identifying risk, clarifying asset condition, and prioritising maintenance decisions.
   </p>
 
   <h2>Services</h2>
@@ -32,32 +32,58 @@
     <li>Annual Coastal Asset Review™</li>
   </ul>
 
-  <h2>What We Do Not Do</h2>
-  <p>
-    We do not carry out repair work or sell remediation services. Our role is independent assessment and advisory only.
-  </p>
-
   <h2>Request an Assessment</h2>
 
   <p>
-    Click below to open your email and send us your details.
+    Fill out the form below. It will open your email with a pre-filled request.
   </p>
 
-  <a href="mailto:info@coastalassetsolutions.co.nz?subject=Coastal%20Asset%20Assessment%20Request&body=Hi,%0D%0A%0D%0AI would like to request a coastal asset assessment.%0D%0A%0D%0AProperty location:%0D%0A%0D%0ADescription:%0D%0A%0D%0AThanks"
-     style="display:inline-block; padding:12px 18px; background:#111; color:white; text-decoration:none; border-radius:6px;">
-    Request Assessment via Email
-  </a>
+  <form onsubmit="sendEmail(event)" style="display:flex; flex-direction:column; gap:10px;">
+
+    <input id="name" type="text" placeholder="Your Name" required style="padding:10px;">
+    <input id="email" type="email" placeholder="Your Email" required style="padding:10px;">
+    <input id="location" type="text" placeholder="Property Location" required style="padding:10px;">
+    <textarea id="message" rows="5" placeholder="Brief description of your property" required style="padding:10px;"></textarea>
+
+    <button type="submit" style="padding:12px; background:#111; color:white; border:none; cursor:pointer;">
+      Submit Request
+    </button>
+
+  </form>
 
   <h2>Contact</h2>
-
   <p>
-    Email: 
-    <a href="mailto:info@coastalassetsolutions.co.nz">
-      info@coastalassetsolutions.co.nz
-    </a>
+    Email: info@coastalassetsolutions.co.nz
   </p>
 
 </div>
+
+<script>
+function sendEmail(e) {
+  e.preventDefault();
+
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const location = document.getElementById('location').value;
+  const message = document.getElementById('message').value;
+
+  const subject = "Coastal Asset Assessment Request";
+
+  const body =
+`Name: ${name}
+Email: ${email}
+Location: ${location}
+
+Message:
+${message}`;
+
+  window.location.href =
+    "mailto:info@coastalassetsolutions.co.nz?subject=" +
+    encodeURIComponent(subject) +
+    "&body=" +
+    encodeURIComponent(body);
+}
+</script>
 
 </body>
 </html>
