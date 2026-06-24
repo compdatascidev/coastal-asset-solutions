@@ -40,20 +40,24 @@
   <h2>Request an Assessment</h2>
 
   <p>
-    If you own a coastal property and want an independent view on condition, risk exposure, or maintenance priorities, contact us directly.
+    Submit your details below and we will respond with next steps for a Coastal Asset Assessment.
   </p>
 
-  <div style="padding:15px; background:#f0f4f8; border-radius:8px;">
-    <p><strong>Next Step:</strong> Email us with your property location and a short description.</p>
+  <form action="https://formsubmit.co/info@coastalassetsolutions.co.nz" method="POST" style="display:flex; flex-direction:column; gap:10px;">
 
-    <p>
-      Email: 
-      <a href="mailto:info@coastalassetsolutions.co.nz?subject=Coastal%20Asset%20Assessment%20Request">
-        info@coastalassetsolutions.co.nz
-      </a>
-    </p>
+    <input type="text" name="name" placeholder="Your Name" required style="padding:10px;">
 
-  </div>
+    <input type="email" name="email" placeholder="Your Email" required style="padding:10px;">
+
+    <input type="text" name="location" placeholder="Property Location" required style="padding:10px;">
+
+    <textarea name="message" placeholder="Brief description of your property / issue" rows="5" required style="padding:10px;"></textarea>
+
+    <button type="submit" style="padding:12px; background:#111; color:white; border:none; cursor:pointer;">
+      Submit Request
+    </button>
+
+  </form>
 
   <h2>Contact</h2>
 
