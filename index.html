@@ -1,294 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-NZ">
 <head>
-  <meta charset="UTF-8">
-  <title>Coastal Asset Solutions Ltd</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" href="images/favicon.png">
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Coastal Asset Solutions | Independent Coastal Property Assessments</title>
+  <meta name="description" content="Independent coastal property assessments, maintenance planning and annual monitoring for coastal property owners.">
+  <link rel="icon" href="favicon.ico">
   <style>
-    body{
-      font-family: Arial, sans-serif;
-      margin:0;
-      background:#f6f7f9;
-      color:#111;
-      line-height:1.7;
-    }
-
-    .container{
-      max-width: 980px;
-      margin: 40px auto;
-      background:white;
-      padding:40px;
-      border-radius:10px;
-      box-sizing:border-box;
-    }
-
-    .logo-wrap{
-      text-align:center;
-      margin-bottom:15px;
-    }
-
-    .logo{
-      width:100%;
-      max-width:860px;
-      height:auto;
-    }
-
-    .tagline{
-      font-size:18px;
-      color:#444;
-      text-align:center;
-      margin-bottom:10px;
-    }
-
-    hr{
-      margin:30px 0;
-      border:none;
-      border-top:1px solid #ddd;
-    }
-
-    h2{
-      margin-top:30px;
-      margin-bottom:12px;
-    }
-
-    p{
-      margin:0 0 16px 0;
-    }
-
-    ul{
-      margin:0 0 16px 0;
-      padding-left:22px;
-    }
-
-    .image-wrap{
-      margin:26px 0 32px 0;
-    }
-
-    .image-wrap img{
-      width:100%;
-      height:auto;
-      border-radius:8px;
-      display:block;
-    }
-
-    .grid{
-      display:grid;
-      grid-template-columns:1fr;
-      gap:18px;
-    }
-
-    .card{
-      background:#fafafa;
-      border:1px solid #e6e6e6;
-      border-radius:10px;
-      padding:20px;
-    }
-
-    .cta-box{
-      background:#fafafa;
-      border:1px solid #e6e6e6;
-      border-radius:10px;
-      padding:24px;
-      margin-top:30px;
-    }
-
-    .cta-button{
-      display:inline-block;
-      padding:13px 20px;
-      background:#111;
-      color:#fff;
-      text-decoration:none;
-      border-radius:6px;
-      margin-top:10px;
-    }
-
-    @media (min-width: 900px){
-      .grid{
-        grid-template-columns:1fr 1fr;
-      }
-    }
-
-    @media (max-width: 640px){
-      .container{
-        margin:20px;
-        padding:22px;
-      }
-    }
+    :root{--navy:#0d3150;--navy2:#08243a;--teal:#2b9ca3;--ink:#17232c;--muted:#66757d;--white:#fff;--mist:#edf5f6;--line:#d9e3e6;--max:1180px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.6;background:#fff}img{display:block;max-width:100%}a{color:inherit}.wrap{width:min(var(--max),calc(100% - 40px));margin:auto}
+    header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+    .nav{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:13px;text-decoration:none}.brand img{width:58px;height:58px;object-fit:contain}.brand-text strong{display:block;color:var(--navy);font-size:1rem;letter-spacing:.03em}.brand-text span{display:block;color:var(--muted);font-size:.76rem}nav{display:flex;align-items:center;gap:22px}nav a{text-decoration:none;font-weight:700;font-size:.92rem;color:var(--navy)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 23px;border-radius:999px;text-decoration:none;font-weight:800;border:2px solid transparent;transition:.2s}.btn-primary{background:var(--teal);color:#082d34}.btn-primary:hover{transform:translateY(-2px);filter:brightness(1.06)}.btn-secondary{color:#fff;border-color:rgba(255,255,255,.55);background:rgba(255,255,255,.08)}
+    .hero{min-height:760px;display:flex;align-items:center;color:#fff;background:linear-gradient(90deg,rgba(6,31,50,.95) 0%,rgba(9,47,72,.84) 48%,rgba(9,47,72,.22) 100%),url('hero-coastal-home.jpg') center/cover no-repeat}.hero-content{padding:120px 0;max-width:850px}.eyebrow{margin:0 0 12px;color:#89d9dc;font-size:.78rem;font-weight:900;letter-spacing:.13em;text-transform:uppercase}h1,h2,h3{margin:0;line-height:1.15}h1{font-size:clamp(2.7rem,6vw,5.2rem);color:#fff}h2{font-size:clamp(2rem,4vw,3.4rem);color:var(--navy)}.lead{margin-top:22px;font-size:clamp(1.08rem,2vw,1.3rem);color:#e5f1f4;max-width:760px}.hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:30px}.proof{display:flex;flex-wrap:wrap;gap:12px 28px;margin-top:34px;color:#d8ebef;font-weight:700;font-size:.92rem}
+    section{padding:96px 0}.split{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}.section-intro{margin-top:18px;color:var(--muted);font-size:1.08rem;max-width:760px}.statement{margin-top:28px;padding:22px 24px;border-left:5px solid var(--teal);background:var(--mist);color:var(--navy);font-size:1.12rem;font-weight:800}.photo-card{overflow:hidden;border-radius:18px;box-shadow:0 18px 42px rgba(13,49,80,.14);background:var(--mist)}.photo-card img{width:100%;aspect-ratio:4/3;object-fit:cover}
+    .asset-panel{padding:0;background:#fff}.asset-panel img{width:100%;height:auto}.placeholder{min-height:420px;display:flex;align-items:center;justify-content:center;text-align:center;padding:40px;background:linear-gradient(135deg,rgba(43,156,163,.08),rgba(13,49,80,.05)),repeating-linear-gradient(45deg,#f7fbfb,#f7fbfb 18px,#eef5f6 18px,#eef5f6 36px);border-top:1px solid var(--line);border-bottom:1px solid var(--line);color:var(--navy)}.placeholder strong{display:block;font-size:clamp(1.8rem,4vw,3rem);margin-bottom:10px}.placeholder span{color:var(--muted)}
+    .dark{background:var(--navy);color:#fff}.dark .quote{max-width:900px;font-size:clamp(1.6rem,3vw,2.4rem);line-height:1.3}.cta{text-align:center;background:var(--navy2);color:#fff}.cta h2{color:#fff;margin:auto;max-width:880px}.cta p{max-width:720px;margin:20px auto 0;color:#d6e5e9}.cta .hero-actions{justify-content:center}footer{background:#061a2a;color:#b9cbd0;padding:34px 0;font-size:.88rem}.footer-row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+    @media(max-width:900px){nav{display:none}.hero{min-height:680px;background-position:62% center}.split{grid-template-columns:1fr}.placeholder{min-height:340px}}@media(max-width:600px){.wrap{width:min(var(--max),calc(100% - 28px))}section{padding:72px 0}.brand-text span{display:none}.hero{min-height:620px}.hero-content{padding:90px 0}.proof{display:grid;gap:10px}.placeholder{min-height:280px}}
   </style>
 </head>
-
 <body>
-
-<div class="container">
-
-  <!-- LOGO -->
-  <div class="logo-wrap">
-    <img src="images/logo.png" class="logo" alt="Coastal Asset Solutions Ltd">
-  </div>
-
-  <p class="tagline">
-    Independent Coastal Property Assessments for Asset Protection, Risk Clarity, and Maintenance Planning
-  </p>
-
-  <hr>
-
-  <!-- HERO -->
-  <h2>Independent Asset Control for Coastal Property Owners</h2>
-
-  <p>
-    Coastal Asset Solutions provides an independent technical layer between property owners and contractor networks.
-    We assess what is actually happening to your asset — corrosion, exposure, degradation, and maintenance risk — without commercial bias.
-  </p>
-
-  <p>
-    Coastal environments accelerate deterioration through salt exposure, weather stress, and material fatigue.
-    A large portion of damage is driven by neglect, delayed maintenance, or missed early warning signs.
-  </p>
-
-  <p>We help owners understand:</p>
-
-  <ul>
-    <li>What is genuinely deteriorating vs cosmetic wear</li>
-    <li>Where coastal exposure is accelerating asset decline</li>
-    <li>Whether contractor recommendations are complete and necessary</li>
-    <li>How to prioritise maintenance spend effectively</li>
-  </ul>
-
-  <!-- IMAGE 1 -->
-  <div class="image-wrap">
-    <img src="images/p1.png">
-  </div>
-
-  <!-- TOOLBOX -->
-  <h2>The Toolbox Approach</h2>
-
-  <div class="grid">
-
-    <div class="card">
-      <strong>Exposure Mapping Toolbox</strong><br>
-      Identifies salt, wind, drainage, and environmental stress zones.
-    </div>
-
-    <div class="card">
-      <strong>Corrosion Detection Toolbox</strong><br>
-      Detects early-stage degradation before visible failure.
-    </div>
-
-    <div class="card">
-      <strong>Scope Validation Toolbox</strong><br>
-      Ensures contractor work is correctly defined and complete.
-    </div>
-
-    <div class="card">
-      <strong>Quote Integrity Toolbox</strong><br>
-      Identifies missing scope, duplication, or inflated pricing.
-    </div>
-
-    <div class="card" style="grid-column:1/-1;">
-      <strong>Lifecycle Planning Toolbox</strong><br>
-      Structures long-term maintenance planning and prioritisation.
-    </div>
-
-  </div>
-
-  <!-- IMAGE 2 -->
-  <div class="image-wrap">
-    <img src="images/p2.png">
-  </div>
-
-  <!-- PROBLEM -->
-  <h2>The Problem We Solve</h2>
-
-  <p>
-    In coastal environments, deterioration often becomes visible only after significant damage has already occurred.
-    Contractors are typically engaged to repair, not independently assess.
-  </p>
-
-  <ul>
-    <li>Over-scoped or duplicated work</li>
-    <li>Missed early-stage corrosion</li>
-    <li>Poor prioritisation of maintenance</li>
-    <li>Inconsistent quoting and scope gaps</li>
-  </ul>
-
-  <!-- IMAGE 3 -->
-  <div class="image-wrap">
-    <img src="images/p3.png">
-  </div>
-
-  <!-- SERVICES -->
-  <h2>Core Services</h2>
-
-  <div class="grid">
-
-    <div class="card">
-      <strong>Coastal Property Snapshot™</strong><br>
-      Overview of visible condition, exposure risk, and early deterioration indicators.
-    </div>
-
-    <div class="card">
-      <strong>Coastal Asset Protection Review™</strong><br>
-      Technical assessment of corrosion risk and environmental exposure.
-    </div>
-
-    <div class="card">
-      <strong>Independent Scope Development™</strong><br>
-      Contractor-ready scope ensuring accurate quoting.
-    </div>
-
-    <div class="card">
-      <strong>Independent Quote Review™</strong><br>
-      Technical review of contractor pricing and scope alignment.
-    </div>
-
-    <div class="card" style="grid-column:1/-1;">
-      <strong>Annual Coastal Asset Review™</strong><br>
-      Ongoing monitoring and maintenance prioritisation over time.
-    </div>
-
-  </div>
-
-  <!-- IMAGE 4 -->
-  <div class="image-wrap">
-    <img src="images/p4.png">
-  </div>
-
-  <!-- WHY -->
-  <h2>Why Independence Matters</h2>
-
-  <p>
-    Coastal assets degrade continuously due to environmental exposure.
-    Without independent review, issues are often underestimated or addressed too late.
-  </p>
-
-  <p>
-    Our role is to anchor decisions to actual asset condition — not assumptions or reactive maintenance cycles.
-  </p>
-
-  <!-- IMAGE 5 -->
-  <div class="image-wrap">
-    <img src="images/p7.png">
-  </div>
-
-  <!-- CTA -->
-  <div class="cta-box">
-
-    <h2>Request an Assessment</h2>
-
-    <p>
-      Click below to send your property info and get a quote.
-    </p>
-
-    <a class="cta-button"
-       href="mailto:info@coastalassetsolutions.co.nz?subject=Coastal%20Asset%20Assessment%20Request&body=Name:%20%20%20%20%0APhone:%20%20%20%20%0AProperty%20address:%20%20%20%20%0AComments:%20%20%20%20%0A%0AThank%20you">
-      Request Assessment
-    </a>
-
-  </div>
-  
-</div>
-
+<header><div class="wrap nav"><a class="brand" href="#top"><img src="logo.png" alt="Coastal Asset Solutions logo"><span class="brand-text"><strong>COASTAL ASSET SOLUTIONS LTD</strong><span>Independent Assessments for Coastal Property Owners</span></span></a><nav><a href="#experience">Experience</a><a href="#assess">What We Assess</a><a href="#report">Your Report</a><a href="#annual">Annual Reviews</a><a class="btn btn-primary" href="mailto:info@coastalassetsolutions.co.nz?subject=Coastal%20Property%20Assessment%20Enquiry">Request an Assessment</a></nav></div></header>
+<main id="top">
+<section class="hero"><div class="wrap hero-content"><p class="eyebrow">Independent coastal property assessments</p><h1>Protecting coastal property value through better-informed decisions.</h1><p class="lead">Independent assessments, maintenance planning and ongoing monitoring informed by experience across the entire coastal property lifecycle.</p><div class="hero-actions"><a class="btn btn-primary" href="mailto:info@coastalassetsolutions.co.nz?subject=Coastal%20Property%20Assessment%20Enquiry&body=Name:%20%0D%0APhone:%20%0D%0AProperty%20Address%20or%20Location:%20%0D%0AComments:%20">Arrange an Assessment</a><a class="btn btn-secondary" href="#experience">Why Our Experience Matters</a></div><div class="proof"><span>40+ years of practical experience</span><span>No repair sales</span><span>Independent, owner-first judgement</span></div></div></section>
+<section><div class="wrap split"><div><p class="eyebrow" style="color:var(--teal)">A different level of assessment</p><h2>Not simply a builder who became an inspector.</h2><p class="section-intro">Most professionals understand one part of property. Coastal Asset Solutions draws on practical experience in construction, exposed coastal environments, marine and resort projects, project management, cost control, property sales, maintenance and long-term asset management.</p><div class="statement">Most inspections identify defects. We interpret what those defects mean for risk, priority, cost and long-term asset value.</div></div><div class="photo-card"><img src="why-experience-matters.jpg" alt="Coastal construction and marine project experience"></div></div></section>
+<section class="asset-panel" id="experience"><img src="experience-lifecycle.png" alt="Experience across the entire coastal property lifecycle" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="placeholder" style="display:none"><div><strong>Experience Across the Entire Coastal Property Lifecycle</strong><span>Upload as experience-lifecycle.png</span></div></div></section>
+<section class="dark"><div class="wrap"><p class="eyebrow">Why that breadth matters</p><p class="quote">Every observation is considered in the context of how the building was constructed, how coastal exposure changes performance, what maintenance should be prioritised and what the owner should do next.</p></div></section>
+<section class="asset-panel" id="assess"><img src="what-we-assess.png" alt="What we assess" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="placeholder" style="display:none"><div><strong>What We Assess</strong><span>Upload as what-we-assess.png</span></div></div></section>
+<section class="asset-panel" id="report"><img src="what-you-receive.png" alt="What you receive" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="placeholder" style="display:none"><div><strong>What You Receive</strong><span>Upload as what-you-receive.png</span></div></div></section>
+<section class="asset-panel"><img src="maintenance-plan.png" alt="Practical maintenance plan" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="placeholder" style="display:none"><div><strong>From Assessment to a Practical Maintenance Plan</strong><span>Upload as maintenance-plan.png</span></div></div></section>
+<section class="asset-panel" id="annual"><img src="annual-review.png" alt="Annual Coastal Asset Review" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="placeholder" style="display:none"><div><strong>Annual Coastal Asset Review™</strong><span>Upload as annual-review.png</span></div></div></section>
+<section class="asset-panel"><img src="independent-owner-focused.png" alt="Independent owner focused service" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="placeholder" style="display:none"><div><strong>Independent. Experienced. Practical. Owner Focused.</strong><span>Upload as independent-owner-focused.png</span></div></div></section>
+<section class="cta"><div class="wrap"><p class="eyebrow">Independent. Practical. Owner focused.</p><h2>Protect your coastal property with a clearer understanding of condition, risk and maintenance priorities.</h2><p>Send the property address or location, your contact details and a short description of what you would like assessed.</p><div class="hero-actions"><a class="btn btn-primary" href="mailto:info@coastalassetsolutions.co.nz?subject=Coastal%20Property%20Assessment%20Enquiry&body=Name:%20%0D%0APhone:%20%0D%0AProperty%20Address%20or%20Location:%20%0D%0AComments:%20">Request an Assessment</a><a class="btn btn-secondary" href="mailto:info@coastalassetsolutions.co.nz">info@coastalassetsolutions.co.nz</a></div></div></section>
+</main>
+<footer><div class="wrap footer-row"><span>© Coastal Asset Solutions Ltd</span><span>Protecting Coastal Property Value Through Independent Assessments</span><span>coastalassetsolutions.co.nz</span></div></footer>
 </body>
 </html>
