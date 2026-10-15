@@ -1,0 +1,15 @@
+Coastal Asset Solutions website asset mapping
+
+logo.png — supplied approved Coastal Asset Solutions logo; artwork unchanged.
+hero-coastal-home.jpg — existing Coastal House at Golden Hour image, optimized as JPEG.
+experience-lifecycle.png — existing Coastal Property Lifecycle Experience graphic.
+what-we-assess.png — existing Coastal Property Assessment Overview graphic.
+what-you-receive.png — existing Coastal asset health assessment report graphic.
+maintenance-plan.png — existing Coastal property maintenance insights graphic.
+annual-review.png — existing Annual Coastal Asset Review Cycle graphic.
+independent-owner-focused.png — existing Coastal asset solutions for property owners flyer artwork.
+favicon.png — favicon PNG derived from the supplied logo artwork.
+
+The index.html source references favicon.ico; convert favicon.png to ICO or update the HTML reference before deployment.
+
+why-experience-matters.jpg — coastal property photograph used in the experience section.
